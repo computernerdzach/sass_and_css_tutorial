@@ -1,26 +1,26 @@
-.panel{
-    border: 3px solid dodgerblue;
-    background: rgb(187, 151, 85);
-    margin: 10px;
+$buttonBackground: #006699;
+$buttonColor: white;
+$buttonPadding: 5px;
+
+.button{
+    background: $buttonBackground;
+    border-radius: 8px;
+    color: $buttonColor;
+    display: inline-block;
+    padding: $buttonPadding;
+    text-decoration: none;
 }
 
-@mixin border-radius($radius){
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
+.jumbo-button{
+    @extend .button;
+    padding: $buttonPadding + 30px;
 }
 
-.little-panel{
-    @extend .panel;
-    @include border-radius(5px);
-    font-size: 12px;
-    padding: 5px;
+.light-button{
+    @extend .button;
+    background: $buttonBackground * 1.5;
 }
 
-.big-panel{
-    @extend .panel;
-    @include border-radius(20px);
-    font-size: 32px;
-    padding: 20px;
-}
+
+
+

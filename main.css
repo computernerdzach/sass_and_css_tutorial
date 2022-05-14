@@ -1,18 +1,17 @@
-.panel, .little-panel, .big-panel {
-  border: 3px solid dodgerblue;
-  background: #bb9755;
-  margin: 10px;
-}
-
-.little-panel {
-  border-radius: 5px;
-  font-size: 12px;
+.button, .jumbo-button, .light-button {
+  background: #006699;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
   padding: 5px;
+  text-decoration: none;
 }
 
-.big-panel {
-  border-radius: 20px;
-  font-size: 32px;
-  padding: 20px;
+.jumbo-button {
+  padding: 35px;
+}
+
+.light-button {
+  background: #0099e6;
 }
 /*# sourceMappingURL=main.css.map */
